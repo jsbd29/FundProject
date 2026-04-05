@@ -1,6 +1,8 @@
 /** @format */
 import { Outlet, Link, useNavigate } from "react-router-dom";
 
+
+
 export default function MainLayout({ isAuthenticated, setAuth }) {
   const navigate = useNavigate();
 
@@ -12,6 +14,7 @@ export default function MainLayout({ isAuthenticated, setAuth }) {
   };
 
   return (
+    
     <div className='layout' style={layoutStyle}>
       <nav style={navStyle}>
         <Link to='/' style={logoStyle}>
